@@ -88,4 +88,18 @@ public class TicTacToe {
         }
         return true;
     }
+    static char[][] getBoard(){
+        return board;
+    }
+    static void resetBoard(){
+        for(int i = 0; i < 3; i++){
+            for(int j = 0; j < 3; j++){
+                board[i][j] = ' ';
+            }
+        }
+    }
+    static void setBoard(int row, int col, char value){
+        board[row][col] = value;
+    }
+
 }
