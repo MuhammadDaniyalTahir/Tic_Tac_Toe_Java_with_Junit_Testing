@@ -31,7 +31,7 @@ public class TicTacToe {
     }
 
     private static boolean isValidMove(int row, int col) {
-        return true;
+        return row >= 0 && row < 3 && col >= 0 && col < 3 && board[row][col] == ' ';
     }
 
     private static boolean checkWin() {
